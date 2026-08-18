@@ -72,3 +72,32 @@ coordinates = (45.5152, -122.6784)
 latitude, longitude = coordinates
 ```
 
+---
+
+## SET
+
+A set is a data structure with unique elements.
+We are not concerened with what is stored 1st or last.
+Hence we may not use the subscript.
+
+## TYPE CASTING
+
+In Python there is no Implicit Type-Casting.
+
+### In Java,
+
+```
+System.out.println("Age of the Giza Pyramids is at least" + 4500 + " years");
+```
+
+This is fine in Java (It implicitly invokes toString() method)
+
+### In Python,
+
+```
+print("Age of the Giza Pyramids is at least" + 4500 + " years") # ERROR
+```
+
+You cannot concatinate a string with an int data.
+You have to explicitly type cast the int value 4500 into a str value.
+
