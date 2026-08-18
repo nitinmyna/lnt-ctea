@@ -101,3 +101,63 @@ print("Age of the Giza Pyramids is at least" + 4500 + " years") # ERROR
 You cannot concatinate a string with an int data.
 You have to explicitly type cast the int value 4500 into a str value.
 
+---
+
+In Python, there is no implicit Type-Casting (Automatic Type casting). Rather, only explicit casting is allowed.
+
+Because Type-Casting are Hinderence. It is usually a Design-Error.
+So we must avoid them.
+
+The Down cast is dangerous because the value it self may chage.
+The up-cast is not dangerous but consumes more memory.
+
+---
+
+```
+import sys
+
+print(sys.argv)
+print(type(sys.argv))
+print(sys.argv[0])
+print(type(sys.argv[0]))
+```
+
+---
+
+## FUNCTION OVERLOADING WHICH IS NOT AVAILABLE IN PYTHON
+
+dictionary = dict() # created a dictionary object
+
+dictionary.get('mysuru') # get me the value where in the key is 'mysuru'
+dictionary.get('mysuru', 100) # get me the value where in the key is 'mysuru', if not present me, use/return the value 100
+
+As we know, in Java, the indexOf() method of String class is defined 4 times. Thus there are 4 different function definitions/implementation.
+
+range() of Python:
+range(10)
+Start from 0 and go upto 9 with an default increment of 1 [0, 10)
+range(5, 15)
+Start from 5 and go upto 14 with an default increment of 1 [5, 15)
+range(30, 50, 3)
+Start from 30 and go upto 49 with an user given increment of 3 [30, 50)
+range(100, 50, -2))
+Start from 100 and go upto 51 with an user given increment of -2 [51, 100)
+
+However, there is only one definition of range() with all 4 logic implemented conditionally (depending on the number of arguiments and wherther the 3rd argument if present is +ve or -ve)
+
+## Why there is no Function Overloading in Python?
+
+As we know the Python is Dynamically typed language and Python has features availble for functions/definitions such as: 1. variable number of arguments concept 2. Named arguments 3. default arguments
+
+## What happens if we define 2 ore more functions with same name?
+
+In such a case, only the last defined function/method will be stored/recorded in memory.
+
+---
+## Tuple
+
+numbers = (10, 20) # numbers here is a tuple
+numbers = (10, ) # numbers here is a tuple
+numbers = (10) # Here numbers is just an int value
+numbers = [19, 33] # numbers now is a list
+
