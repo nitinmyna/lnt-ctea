@@ -1,3 +1,4 @@
+
 DAY3 20-08-2026
 
 Type Casting DONE
@@ -20,9 +21,6 @@ It allows you to pass behavior as a value.
 sorted(employees, key=lambda e: e["salary"])
 lambda e: e["salary"]
 "For each employee, use the salary as the value by which you should sort."
-
-Nemerical methods:
-Integration and Diffrentiation using lambda functions
 
 Type Casting:
 Conversion of one type data into another.
@@ -153,3 +151,46 @@ We can use lambda to implement group-by and having clause.
 lambda for LISP programming
 Autocad, to draft based on DCL files and I/Ps
 ```
+
+Pandas Syntax:
+allowed_regions = ["North", "South", "East"]
+filtered_regions = df[df["Region"].isin(allowed_regions)]
+
+SQL Syntax:
+select \* from employees wher region in["North", "South", "East"];
+// Returns the result set
+
+filtered_regions = df[df["Region"].isin(["North", "South", "East"])]
+// returns the data frame
+
+sales_by_region = df.groupby("Region")["Sales"].sum().reset_index()
+
+## select sum(amount) as Total_Sales from sales group by (region);
+
+## DATA VISUALIZATION
+
+Result Analysis
+Assume that a college wants to do analysis on their semester exams.
+Top 3 students for each subject Compare them with previous year data
+Average score of each subject Year wise improvement w.r.t subject
+Average score of each dept Dept wise performance
+First 3 students scoring least marks Students who need more attention
+Highest scored subject Which subject has done well
+Least scored subject Which subject need more time
+
+Sales Data
+Expenses Data
+Inventory Data
+Raw Material Purchase data
+
+OLAP Analysis huge amount of data is generated Less data manipulation
+OLTP Transactions less amount of data is generated More data manipulation
+
+OLAP is where we do data Analysis.
+
+Line Chart is used to compare the on going score of chasing team vs the score of opponent team in Cricket.
+
+I/P is PDF files
+Processing data from PDF and creating the O/P back in form of PDF
+
+---
